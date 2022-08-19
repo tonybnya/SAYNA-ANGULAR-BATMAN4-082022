@@ -1,0 +1,45 @@
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/typo';
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: $color-black;
+  color: $color-white;
+  p {
+    font-family: 'Space Grotesk';
+    font-size: 12px;
+  }
+}
+
+.line-text {
+  // @include flexCenter;
+  margin-bottom: 15px;
+  margin-top: 40px;
+  img {
+    padding: 5px;
+    // background: $color-red;
+  }
+}
+
+.icons {
+  @include flexCenter;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  .branding {
+    margin-right: 10px;
+    img {
+      padding: 5px;
+    }
+  }
+  .social {
+    margin-left: 10px;
+    img {
+      padding: 15px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/typo';
+
+.navbar {
+  background: $color-black;
+  padding: 10px 50px;
+  .brand:hover {
+    filter: invert(18%) sepia(82%) saturate(4658%) hue-rotate(355deg)
+    brightness(109%) contrast(112%);
+  }
+}
+
+.nav-link {
+  color: $color-white;
+  text-transform: uppercase;
+  font-family: 'Rajdhani';
+  font-size: 25px;
+  padding: 10px;
+  font-weight: 500;
+  &:hover {
+    color: $color-yellow-1;
+  }
+}
