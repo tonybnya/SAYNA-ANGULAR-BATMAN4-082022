@@ -1,10 +1,16 @@
 @import '../../../assets/styles/colors';
 @import '../../../assets/styles/typo';
+@import '../../../assets/styles/global';
 
-@mixin flexCenter {
+%flexCenter {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+footer {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .card {
@@ -17,17 +23,16 @@
 }
 
 .line-text {
-  // @include flexCenter;
+  @extend %flexCenter;
   margin-bottom: 15px;
   margin-top: 40px;
   img {
     padding: 5px;
-    // background: $color-red;
   }
 }
 
 .icons {
-  @include flexCenter;
+  @extend %flexCenter;
   margin-top: 15px;
   margin-bottom: 40px;
   .branding {
@@ -36,7 +41,7 @@
       padding: 5px;
     }
   }
-  .social {
+  .social-links {
     margin-left: 10px;
     img {
       padding: 15px;

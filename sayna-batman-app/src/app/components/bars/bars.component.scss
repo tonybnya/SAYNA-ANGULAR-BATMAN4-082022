@@ -1,0 +1,26 @@
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/typo';
+
+.up-bar {
+  position: absolute;
+  left: 102px;
+  top: 132px;
+  width: calc(100vw - 206px);
+  border-top: 1px solid $color-gray;
+}
+
+.left-bar,
+.right-bar {
+  position: absolute;
+  border-left: 1px solid $color-gray;
+  height: 1100vh;
+  top: 0;
+}
+
+.left-bar {
+  left: 102px;
+}
+
+.right-bar {
+  right: 102px;
+}
