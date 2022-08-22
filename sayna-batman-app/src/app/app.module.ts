@@ -9,6 +9,8 @@ import { HomeComponent } from './components/home/home.component';
 import { GameComponent } from './components/game/game.component';
 import { EshopComponent } from './components/eshop/eshop.component';
 import { MonCompteComponent } from './components/mon-compte/mon-compte.component';
+import { ScrollbarComponent } from './components/scrollbar/scrollbar.component';
+import { BarsComponent } from './components/bars/bars.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { MonCompteComponent } from './components/mon-compte/mon-compte.component
     HomeComponent,
     GameComponent,
     EshopComponent,
-    MonCompteComponent
+    MonCompteComponent,
+    ScrollbarComponent,
+    BarsComponent
   ],
   imports: [
     BrowserModule,
