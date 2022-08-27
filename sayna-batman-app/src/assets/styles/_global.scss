@@ -1,10 +1,15 @@
 @import '../../assets/styles/colors';
 @import '../../assets/styles/typo';
 
-* {
+body {
   font-family: 'Space Grotesk';
   color: $color-white;
   font-weight: 300;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
 
 img:hover {
@@ -14,17 +19,21 @@ img:hover {
 p {
   font-size: 20px;
   margin: 10px 0;
+  color: $color-white;
+  font-family: 'Space Grotesk';
 }
 
 %title {
-  font-family: 'Rajdhani';
-  font-weight: 500;
+  font-weight: bold;
   font-size: 36px;
+  color: $color-white;
+  font-family: 'Space Grotesk';
 }
 
 %btn {
   font-family: 'Rajdhani';
   font-size: 20px;
+  font-weight: bold;
   padding: 10px 50px;
   color: $color-white;
 

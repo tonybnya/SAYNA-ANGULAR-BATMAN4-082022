@@ -1,0 +1,80 @@
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/typo';
+@import '../../../assets/styles/global';
+
+#hero {
+  background-position: top center;
+  background-image: url(../../../assets/img/illustrations_game/Batgame_1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: calc(130vh - 30px);
+
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(-1000px) scale(0.1);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  .container {
+    .content {
+      animation: fadeInRight 1500ms ease-in-out;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      // width: 60%;
+      margin: 0 auto;
+      padding-top: 400px;
+      p {
+        text-align: left;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 36px;
+      }
+    }
+
+    .arrow {
+      display: block;
+      margin: 0 auto;
+      width: 80px;
+      margin-top: 20rem;
+    }
+  }
+}
+
+#quizz {
+  margin-top: 40px;
+  .card-quizz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      text-transform: uppercase;
+      margin-bottom: 40px;
+      font-size: 36px;
+      font-weight: bold;
+      font-family: 'Rajdhani';
+    }
+    .btn {
+      @extend %btn;
+      text-transform: uppercase;
+      margin-top: 40px;
+      background: linear-gradient(
+        // 30deg,
+        #EDDEBF 40%,
+        #C38532 100%
+      );
+      &:hover {
+        background: linear-gradient(
+          70deg,
+          rgba(237, 222, 191, 1) 40%,
+          rgba(137, 0, 8, 0.4) 60%
+        );
+      }
+    }
+  }
+}

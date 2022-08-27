@@ -11,6 +11,7 @@ import { EshopComponent } from './components/eshop/eshop.component';
 import { MonCompteComponent } from './components/mon-compte/mon-compte.component';
 import { ScrollbarComponent } from './components/scrollbar/scrollbar.component';
 import { BarsComponent } from './components/bars/bars.component';
+import { NotFoundPageComponent } from './components/not-found-page/not-found-page.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { BarsComponent } from './components/bars/bars.component';
     EshopComponent,
     MonCompteComponent,
     ScrollbarComponent,
-    BarsComponent
+    BarsComponent,
+    NotFoundPageComponent
   ],
   imports: [
     BrowserModule,
