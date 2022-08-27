@@ -3,11 +3,7 @@
 @import '../../../assets/styles/typo';
 
 #hero {
-  background-position: top center;
-  background-image: url(../../../assets/img/illustrations_home/Bathome1.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: calc(130vh - 30px);
+  @include bg-hero(url(../../../assets/img/illustrations_home/Bathome1.png));
 
   @keyframes fadeInRight {
     0% {

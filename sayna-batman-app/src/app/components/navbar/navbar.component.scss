@@ -3,8 +3,10 @@
 @import '../../../assets/styles/typo';
 
 .navbar {
-  // background: $color-white;
   padding: 10px 50px;
+  .navbar-toggler {
+    background: $color-white;
+  }
 }
 
 .nav-link {
@@ -12,7 +14,7 @@
   text-transform: uppercase;
   font-family: 'Rajdhani';
   font-size: 25px;
-  padding: 10px;
+  // padding: 10px;
   font-weight: 500;
   &:hover {
     color: $color-yellow-1;
@@ -23,4 +25,5 @@
   font-weight: bolder;
   text-decoration: underline;
   color: $color-white !important;
+  scale: 1.1;
 }

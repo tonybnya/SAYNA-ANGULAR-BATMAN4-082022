@@ -1,7 +1,42 @@
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/typo';
+@import '../../../assets/styles/global';
+
 #hero {
-  background-position: top center;
-  background-image: url('../../../assets/img/bg/bg_1.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: calc(130vh - 30px);
+  @include bg-hero(url(../../../assets/img/bg/bg_1.png));
+
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(-1000px) scale(0.1);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  .container {
+    .content {
+      animation: fadeInRight 1500ms ease-in-out;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      margin: 0 auto;
+      padding-top: 400px;
+      h1 {
+        text-align: left;
+        color: $color-white;
+        font-family: 'Rajdhani';
+        font-weight: bolder;
+      }
+    }
+    .arrow {
+      display: block;
+      margin: 0 auto;
+      width: 80px;
+      margin-top: 20rem;
+    }
+  }
 }

@@ -3,11 +3,7 @@
 @import '../../../assets/styles/global';
 
 #hero {
-  background-position: top center;
-  background-image: url(../../../assets/img/illustrations_game/Batgame_1.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: calc(130vh - 30px);
+  @include bg-hero(url(../../../assets/img/illustrations_game/Batgame_1.png));
 
   @keyframes fadeInRight {
     0% {
@@ -26,7 +22,6 @@
       flex-direction: column;
       justify-content: center;
       text-align: center;
-      // width: 60%;
       margin: 0 auto;
       padding-top: 400px;
       p {
@@ -52,7 +47,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    h1 {
+    .title {
+      color: $color-white;
       text-transform: uppercase;
       margin-bottom: 40px;
       font-size: 36px;

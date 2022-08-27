@@ -1,12 +1,6 @@
 @import '../../assets/styles/colors';
 @import '../../assets/styles/typo';
 
-body {
-  font-family: 'Space Grotesk';
-  color: $color-white;
-  font-weight: 300;
-}
-
 .container {
   width: 80%;
   margin: 0 auto;
@@ -23,6 +17,14 @@ p {
   font-family: 'Space Grotesk';
 }
 
+@mixin bg-hero($bg-img) {
+  background-position: top center;
+  background-image: $bg-img;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: calc(130vh - 30px);
+}
+
 %title {
   font-weight: bold;
   font-size: 36px;
@@ -36,6 +38,8 @@ p {
   font-weight: bold;
   padding: 10px 50px;
   color: $color-white;
+  border: none;
+  border-radius: 5px;
 
   text-decoration: none;
   display: inline-block;
