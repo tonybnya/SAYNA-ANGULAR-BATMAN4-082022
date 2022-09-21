@@ -1,0 +1,10 @@
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/global';
+@import '../../../assets/styles/typo';
+
+.products {
+  button {
+    @extend %btn;
+    text-transform: uppercase;
+  }
+}

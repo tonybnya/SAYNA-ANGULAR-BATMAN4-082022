@@ -1,0 +1,10 @@
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/typo';
+@import '../../../assets/styles/global';
+
+.container {
+  .cart {
+    margin-right: 15px;
+    color: $color-white;
+  }
+}

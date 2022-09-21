@@ -12,6 +12,9 @@ import { MonCompteComponent } from './components/mon-compte/mon-compte.component
 import { ScrollbarComponent } from './components/scrollbar/scrollbar.component';
 import { BarsComponent } from './components/bars/bars.component';
 import { NotFoundPageComponent } from './components/not-found-page/not-found-page.component';
+import { CartComponent } from './components/cart/cart.component';
+import { FilterComponent } from './components/filter/filter.component';
+import { ProductsComponent } from './components/products/products.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { NotFoundPageComponent } from './components/not-found-page/not-found-pag
     MonCompteComponent,
     ScrollbarComponent,
     BarsComponent,
-    NotFoundPageComponent
+    NotFoundPageComponent,
+    CartComponent,
+    FilterComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
