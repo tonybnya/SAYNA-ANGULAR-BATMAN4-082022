@@ -1,20 +1,24 @@
 <h1>Produits</h1>
 
-<div class="products">
-  <div class="card" style="width: 18rem">
-    <img
-      src="https://i.postimg.cc/qvQM31jM/article-1.png"
-      class="card-img-top"
-      alt="..."
-    />
-    <div class="card-body bg-dark text-center">
-      <div class="title">
-        <h5>{{ title }}</h5>
+<div class="results pt-3">
+  <p>Résultats :<span class="mx-2"> 20</span></p>
+  <div class="sort">
+    <p>Trier par <i class="fa-solid fa-chevron-down"></i></p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <div class="card my-3">
+      <img
+        src="https://i.postimg.cc/qvQM31jM/article-1.png"
+        alt="card image"
+        class="card-img"
+      />
+      <div class="bg-dark py-3 text-center">
+        <h5 class="card-title">Titre</h5>
+        <h5 class="card-title">25</h5>
       </div>
-      <div class="price">
-        <h5>{{ price }}€</h5>
-      </div>
+      <button class="btn btn-primary text-uppercase">Ajouter au panier</button>
     </div>
-    <button>Ajouter au panier</button>
   </div>
 </div>
