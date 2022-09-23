@@ -10,11 +10,19 @@
 .results {
   display: flex;
   justify-content: space-between;
+  .arrow {
+    color: $color-red;
+  }
 }
 
 .row {
   button {
     @extend %btn;
     text-transform: uppercase;
+  }
+  .card {
+    &:hover {
+      scale: 1.1;
+    }
   }
 }
