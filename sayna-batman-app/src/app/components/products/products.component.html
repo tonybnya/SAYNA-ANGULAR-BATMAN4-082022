@@ -16,7 +16,12 @@
   >
     <div class="col-md-4">
       <div class="card my-3" style="width: 15rem">
-        <img [src]="product.imgURL" alt="card image" class="card-img" />
+        <img
+          routerLink="product/{{ product.id }}"
+          [src]="product.imgURL"
+          alt="card image"
+          class="card-img"
+        />
         <div class="bg-dark py-3 text-center">
           <h5 class="card-title">{{ product.nom | uppercase }}</h5>
           <h5 class="card-price">{{ product.prix | currency: "EUR" }}</h5>
