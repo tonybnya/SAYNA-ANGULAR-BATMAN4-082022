@@ -9,7 +9,11 @@
   </div>
 </div>
 <div class="row">
-  <ng-container *ngFor="let product of products">
+  <ng-container
+    *ngFor="
+      let product of products | paginate: { itemsPerPage: 9, currentPage: page }
+    "
+  >
     <div class="col-md-4">
       <div class="card my-3">
         <img [src]="product.imgURL" alt="card image" class="card-img" />
@@ -23,4 +27,12 @@
       </div>
     </div>
   </ng-container>
+  <div class="pages">
+    <pagination-controls
+      class="text-center"
+      previousLabel="Précédent"
+      nextLabel="Suivant"
+      (pageChange)="page = $event"
+    ></pagination-controls>
+  </div>
 </div>

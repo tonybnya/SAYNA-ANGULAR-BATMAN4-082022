@@ -7,6 +7,7 @@ import { ApiArticlesService } from 'src/app/services/api-articles.service';
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent implements OnInit {
+  page: number = 1;
   public products: any;
 
   constructor(private api: ApiArticlesService) { }
