@@ -17,6 +17,7 @@ import { NotFoundPageComponent } from './components/not-found-page/not-found-pag
 import { CartComponent } from './components/cart/cart.component';
 import { FilterComponent } from './components/filter/filter.component';
 import { ProductsComponent } from './components/products/products.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ProductsComponent } from './components/products/products.component';
     NotFoundPageComponent,
     CartComponent,
     FilterComponent,
-    ProductsComponent
+    ProductsComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
