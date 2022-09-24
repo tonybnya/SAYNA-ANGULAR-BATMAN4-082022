@@ -41,3 +41,22 @@ section {
     font-family: 'rajdhani';
   }
 }
+#comments {
+  font-family: 'rajdhani';
+  h2 {
+    color: $color-white;
+  }
+  p {
+    font-family: 'rajdhani';
+  }
+  .head {
+    .fa-star {
+      color: $color-yellow-1;
+    }
+  }
+  .gray {
+    text-transform: uppercase;
+    color: $color-blue;
+    font-weight: bolder;
+  }
+}
