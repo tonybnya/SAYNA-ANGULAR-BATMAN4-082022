@@ -1,0 +1,36 @@
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/typo';
+
+%btn {
+  text-transform: uppercase;
+  font-family: 'Rajdhani';
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 5px 20px;
+  color: $color-white;
+  border: none;
+  border-radius: 5px;
+  width: 13rem;
+
+  text-decoration: none;
+  display: inline-block;
+  background: linear-gradient(
+    70deg,
+    rgba(237, 222, 191, 1) 40%,
+    rgba(137, 0, 8, 1) 60%
+  );
+  box-shadow: $color-black 5px 5px 60px;
+  margin-left: 20px;
+  &:hover {
+    background: linear-gradient(
+      70deg,
+      rgba(237, 222, 191, 1) 40%,
+      rgba(137, 0, 8, 0.4) 60%
+    );
+    text-shadow: 2px 2px 3px $color-black;
+  }
+}
+
+button {
+  @extend %btn;
+}

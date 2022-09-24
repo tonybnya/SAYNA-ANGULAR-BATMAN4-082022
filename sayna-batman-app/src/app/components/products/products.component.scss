@@ -16,10 +16,6 @@
 }
 
 .row {
-  button {
-    @extend %btn;
-    text-transform: uppercase;
-  }
   .card {
     &:hover {
       scale: 1.1;
