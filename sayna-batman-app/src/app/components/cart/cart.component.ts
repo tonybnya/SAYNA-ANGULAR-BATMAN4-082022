@@ -20,11 +20,11 @@ export class CartComponent implements OnInit {
   }
 
   removeItem(product: any) {
-    if (confirm('Es-tu sûr de vouloir supprimer ce produit'))
+    if (confirm('Êtes-vous sûr de vouloir supprimer ce produit'))
       this.cartService.removeCartItem(product);
   };
   // removeItem(productId: any) {
-  //   if (confirm('Es-tu sûr de vouloir supprimer ce produit'))
+  //   if (confirm('Êtes-vous sûr de vouloir supprimer ce produit'))
   //     this.cartService.removeCartItem(productId).subscribe(() => {
   //       alert('Suppression confirmée !');
   //       window.location.reload();
