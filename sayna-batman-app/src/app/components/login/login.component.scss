@@ -1,0 +1,24 @@
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/typo';
+
+.hero-image {
+  background-image: url(https://i.postimg.cc/Mp1w4RM5/bg-3.png);
+  height: 800px;
+  background-position: center;
+  background-color: $color-dark;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.formulaire {
+  background: linear-gradient(to right, rgb(18, 91, 52), rgb(1, 92, 148));
+  max-width: 32%;
+  padding: 40px;
+  margin-top: -35%;
+  border-radius: 10px;
+  .form {
+    background-color: rgba(122, 122, 122, 0.848);
+    padding: 15px;
+    border-radius: 10px;
+  }
+}

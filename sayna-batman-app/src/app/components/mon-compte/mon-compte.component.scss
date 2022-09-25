@@ -1,3 +1,50 @@
 @import '../../../assets/styles/colors';
 @import '../../../assets/styles/global';
 @import '../../../assets/styles/typo';
+
+.hero-image {
+  background-image: url(https://i.postimg.cc/FsMmDGR1/bg-2.png);
+  height: 800px;
+  background-position: center;
+  background-color: $color-black;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-title {
+  padding-top: 4em;
+  font-size: 3em;
+  font-weight: bolder;
+  text-shadow: $color-white 0px 10px 30px;
+  font-family: 'Rajdhani';
+}
+
+h1 {
+  color: $color-white;
+}
+
+p {
+  font-family: 'Rajdhani';
+}
+
+a {
+  padding-top: 15px;
+  color: $color-white;
+  text-decoration: none;
+  font-family: 'Rajdhani';
+}
+
+a:active,
+a:hover {
+  text-decoration: underline;
+}
+
+.info-perso,
+.info-newsletter {
+  padding-left: 30px;
+  border-left: 3px $color-white solid;
+}
+.aside-menu,
+.compte-info {
+  font-family: 'Rajdhani';
+}
