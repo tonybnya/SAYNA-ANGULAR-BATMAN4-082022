@@ -41,3 +41,11 @@
     }
   }
 }
+
+.cart {
+  margin-right: 15px;
+  color: $color-white;
+  &:hover {
+    cursor: pointer;
+  }
+}
