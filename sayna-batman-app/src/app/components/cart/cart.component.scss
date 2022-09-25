@@ -16,6 +16,12 @@
   }
 }
 
+.delete {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 .container-largeur {
   width: 70%;
   margin: 80px auto;

@@ -7,6 +7,9 @@ section {
 
 .cart {
   color: $color-white;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .conteneur-single {

@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ApiArticlesService } from 'src/app/services/api-articles.service';
 import { ApiCommentsService } from 'src/app/services/api-comments.service';
+import { CartService } from 'src/app/services/cart.service';
 
 @Component({
   selector: 'app-single-product',
@@ -13,7 +14,7 @@ export class SingleProductComponent implements OnInit {
   page: number = 1;
   public comments: any;
 
-  constructor(private api: ApiArticlesService, private route: ActivatedRoute, private apiCom: ApiCommentsService) { }
+  constructor(private api: ApiArticlesService, private route: ActivatedRoute, private apiCom: ApiCommentsService, private router: Router, private cartService: CartService) { }
 
   ngOnInit(): void {
     const productID = +this.route.snapshot.params['id'];
@@ -22,8 +23,13 @@ export class SingleProductComponent implements OnInit {
       this.product = res;
     });
 
-    this.apiCom.getComments().subscribe((result) => {
+    this.apiCom.getComments().subscribe((result: any) => {
       this.comments = result;
     });
+  }
+
+  addToCart(product: any) {
+    this.cartService.addToCart(product);
+    this.router.navigateByUrl('cart');
   }
 }
