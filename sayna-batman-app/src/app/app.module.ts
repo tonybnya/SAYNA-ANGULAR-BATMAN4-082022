@@ -20,6 +20,8 @@ import { ProductsComponent } from './components/products/products.component';
 import { ButtonComponent } from './components/button/button.component';
 import { SingleProductComponent } from './components/single-product/single-product.component';
 import { CommandComponent } from './components/command/command.component';
+import { LoginComponent } from './components/login/login.component';
+import { SignupComponent } from './components/signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { CommandComponent } from './components/command/command.component';
     ProductsComponent,
     ButtonComponent,
     SingleProductComponent,
-    CommandComponent
+    CommandComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
