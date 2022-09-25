@@ -19,6 +19,7 @@ import { FilterComponent } from './components/filter/filter.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ButtonComponent } from './components/button/button.component';
 import { SingleProductComponent } from './components/single-product/single-product.component';
+import { CommandComponent } from './components/command/command.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { SingleProductComponent } from './components/single-product/single-produ
     FilterComponent,
     ProductsComponent,
     ButtonComponent,
-    SingleProductComponent
+    SingleProductComponent,
+    CommandComponent
   ],
   imports: [
     BrowserModule,
